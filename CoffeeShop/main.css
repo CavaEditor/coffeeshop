@@ -1,0 +1,302 @@
+body{
+    display : grid;
+    grid-template-rows:575px 500px 900px 1000px 600px 900px 100px;
+    grid-template-areas:
+    'header'
+    'home'
+    'wcs'
+    'menu'
+    'festivals'
+    'contact'
+    'footer';
+}
+/*-----------------Header-------------------*/
+header#header{
+    grid-area : header;
+}
+header#header div{
+    width : auto;
+    height : 575px;
+    background : #B03500;
+    position: absolute;
+    top :0;
+    right:0;
+    left:0;
+}
+header#header div img{
+    padding-top : 130px;
+    width : 150px;
+    height : 150px;
+}
+header#header div h1{
+    font-family: 'Overpass', sans-serif;
+    text-align : center;
+    font-size : 32px;
+    color : white;
+    position : relative;
+    top:-40px;
+}
+header#header div p{
+    color : white;
+    font-family: cursive;
+    text-align : center;
+    position : relative;
+    top : -50px;
+    font-size : 18px;
+}
+header#header div ul{
+    list-style-type : none;
+    text-align : center;
+    position : static;
+}
+header#header div ul li{
+    display : inline-block;
+    padding : 30px;
+}
+header#header div ul li a{
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    text-decoration : none;
+    font-size : 16px;
+}
+/*------------------------HOME---------------------*/
+section#home{
+    grid-area : home;
+}
+section#home div{
+    width : 1510px;
+    height : 500px;
+    position : relative;
+    top : -29px;
+    left:0;
+    background-color :#242424;
+}
+section#home div h2{
+    text-align : center;
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    padding-top : 100px;
+}
+section#home div p{
+    width : 500px;
+    color : white;
+    font-family: 'Overpass', sans-serif;
+}
+section#home div div.button a{
+    color : white;
+}
+/*------WCS----------*/
+section#wcs{
+    grid-area : wcs;
+    position : relative;
+        top : -29px;
+}
+section#wcs div{
+    width : 1510px;
+    height : 900px;
+    left:0;
+    background:#B03500;
+    display : grid;
+    grid-template-columns : 50% 50%;
+    grid-template-areas :
+    'right left';
+}
+section#wcs h2{
+    text-align : center;
+    color: white;
+    padding-top : 50px;
+    font-size : 32px;
+    margin-left : 140px;
+    font-family: 'Overpass', sans-serif;
+}
+section#wcs article#right{
+    grid-area : right;
+}
+section#wcs article#right img{
+    width : 400px;
+    height : 400px;
+    margin-left : 100px;
+    border-top-left-radius : 30px;
+    border-bottom-right-radius : 30px;
+}
+section#wcs article#left{
+    grid-area:left;
+}
+section#wcs article#left p{
+    color : white;
+    width : 400px;
+    margin-top : 200px;
+    margin-left:100px;
+    font-size : 32px;
+    font-family: 'Overpass', sans-serif;
+}
+section#wcs p{
+    color : white;
+    margin-left:100px;
+    font-size : 32px;
+    width : 1100px;
+    font-family: 'Overpass', sans-serif;
+}
+/*---------------Menu--------------*/
+section#menu{
+    grid-area : menu;
+}
+section#menu h2{
+    text-align : center;
+    color : #242424;
+    font-family: 'Overpass', sans-serif;
+    font-size : 40px;
+}
+section#menu ul{
+    list-style-type : none;
+    display : grid;
+    grid-template-columns:repeat(3,1fr);
+}
+section#menu ul li{
+    width : 400px;
+    height : 400px;
+    background : #B03500;
+    margin : 15px;
+}
+section#menu ul li h3{
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    text-align : center;
+}
+section#menu ul li img{
+    height : 200px;
+    width : 200px;
+    margin-left : 100px;
+}
+section#menu ul li p{
+    width : 400px;
+    text-align : center;
+    color : white;
+    font-family: 'Overpass', sans-serif;
+}
+section#menu ul li button{
+    color : white;
+    background : #B03500;
+    width : 120px;
+    height : 50px;
+    font-family: 'Overpass', sans-serif;
+    margin-left : 140px;
+}
+/*-----------------Festivals -----------------*/
+section#festivals{
+    grid-area : festivals;
+}
+section#festivals h2{
+    text-align : center;
+    font-family: 'Overpass', sans-serif;
+    font-size : 35px;
+}
+section#festivals p{
+    text-align : center;
+    font-family: 'Overpass', sans-serif;
+    font-size : 24px;
+}
+section#festivals ul{
+    list-style-type : none;
+    display : grid;
+    grid-template-columns:repeat(3,1fr);
+}
+section#festivals ul li{
+    width : 400px;
+    height : 400px;
+    background : #B03500;
+    margin : 15px;
+}
+section#festivals ul a{
+    text-decoration : none;
+    color : white;
+}
+section#festivals ul li h3{
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    text-align : center;
+}
+section#festivals ul li img{
+    height : 200px;
+    width : 200px;
+    margin-left : 100px;
+}
+section#festivals ul li p{
+    font-size : 16px;
+}
+/*------------------Contact---------------*/
+section#contact{
+    grid-area : contact;
+}
+section#contact div{
+     width : auto;
+     height : 900px;
+     background : #B03500;
+     position : relative;
+     top :0;
+     right:0;
+     left:0;
+}
+section#contact div h2{
+    color : white;
+    text-align : center;
+    font-family: 'Overpass', sans-serif;
+    font-size : 50px;
+    padding-top : 100px;
+}
+section#contact div p{
+    color : white;
+    text-align : center;
+    font-family: 'Overpass', sans-serif;
+    position : relative;
+    top : -30px;
+}
+section#contact div label{
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    padding-left : 580px;
+    font-size : 32px;
+}
+section#contact div input[type=text]{
+    border : 1px solid #242424;
+    width : 400px;
+    height : 40px;
+    margin-left:570px;
+    border-radius : 30px;
+}
+section#contact div input[type=email]{
+    border : 1px solid #242424;
+    width : 400px;
+    height : 40px;
+    margin-left:570px;
+    border-radius : 30px;
+}
+section#contact div input.feedback[type=text]{
+    height : 300px;
+}
+section#contact div button{
+    width : 100px;
+    height : 40px;
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    font-size : 15px;
+    border : 1px solid #B03500;
+    background-color : #C94A0A;
+    border-radius : 20px;
+    margin-top : 40px;
+}
+/*---------Footer-----------*/
+footer#footer{
+    grid-area : footer;
+}
+footer#footer div{
+    background-color : #242424;
+    width : autox;
+    height : 100px;
+}
+footer#footer div h3{
+    color : white;
+    font-family: 'Overpass', sans-serif;
+    font-size : 15px;
+    padding-top : 100px;
+}
